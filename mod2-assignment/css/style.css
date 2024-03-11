@@ -28,13 +28,19 @@ h1 {
 	font-size: 175%;
 }
 
-h2{
+h2 {
+	/*Variables*/
+	--h2-box-width: 33%;
+
+	/*Rules*/
 	font-size: 125%;
 	border: var(--border-width) solid var(--line-color);
-	margin: calc(var(--border-width)*(-1));
-	float:right;
+	margin: 0;
 
-	width: 33%;
+	width: var(--h2-box-width);
+	position:relative;
+	left: calc(100% - var(--h2-box-width));
+
 	text-align: center;
 	padding: 1% 3%;
 
@@ -44,7 +50,6 @@ h2{
 
 .menu-item p {
 	padding: 10px;
-	padding-top: 10px;
 	clear: both;
 }
 
@@ -103,6 +108,8 @@ h2{
 
 /************** Mobile view **************/
 @media (max-width: 767px){
+
+	/* Default behaviour */
 
 }
 
